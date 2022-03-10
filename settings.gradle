@@ -1,0 +1,2 @@
+rootProject.name = 'bftp2-fullstack-project-tutorials-starter'
+include ':client', ':server'
