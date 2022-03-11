@@ -31,5 +31,6 @@ task copyWebApplication(type: Copy) {
     into('./src/main/resources/static')
 }
 
+processResources.dependsOn(copyWebApplication)
 build.dependsOn(copyWebApplication)
 copyWebApplication.dependsOn(':client:build')

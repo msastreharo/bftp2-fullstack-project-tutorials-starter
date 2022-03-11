@@ -19,6 +19,7 @@ test('shows list of books', async () => {
         });
 
     render(<App/>);
+
     await waitFor(() => {
         expect(screen.getByText(/Mujeres, Raza y Clase/i)).toBeInTheDocument()
         expect(screen.getByText(/El problema del trabajo/i)).toBeInTheDocument()
