@@ -32,6 +32,10 @@ task copyWebApplication(type: Copy) {
     into('./src/main/resources/static')
 }
 
+jar {
+    enabled=false
+}
+
 processResources.dependsOn(copyWebApplication)
 build.dependsOn(copyWebApplication)
 copyWebApplication.dependsOn(':client:build')
