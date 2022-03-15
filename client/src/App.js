@@ -17,9 +17,7 @@ function App() {
     return (
         <div className="App">
             <h1>Libritos</h1>
-            <h2>Esta es nuestra biblioteca:</h2>
             <ul>
-
                 {books.map(book => <li>{ `${book.title} (${book.author})`}</li>)}
             </ul>
         </div>
