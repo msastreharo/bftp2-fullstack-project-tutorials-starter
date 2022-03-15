@@ -20,6 +20,7 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     runtimeOnly project(':client')
+    implementation 'org.springframework.boot:spring-boot-devtools:2.6.4'
 }
 
 tasks.named('test') {
